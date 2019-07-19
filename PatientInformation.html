@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patient Information</title>
+<link rel="stylesheet" type="text/css" media= "screen and (min-width: 900px)" href= "patientCss.css"/>
+</head>
+<body>
+<h1><strong> Patient Information</strong> </h1>
+
+<form>
+<fieldset>
+<legend>Personal Information</legend>
+Last Name:
+<input id= "ln" type="text" name="lastName" required autofocus>
+<br>
+<br>
+First Name:
+<input id= "fn" type="text" name=firstName" required">
+<br>
+<br>
+Middle Initial(s):
+<input id= "mi" type="text" name=middleInitial" size="3">
+<br>
+<br>
+Date of Birth:
+<input id= "dob" type="date" name="dob" required>
+<br>
+<br>
+Age:
+<input id= "age" type="number" name="age" min="0" max="100">
+<br>
+<br>
+Contact Number:
+<input id= "num" type="tel" name="phoneNumber" required>
+<br>
+<br>
+Email Address:
+<input id= "email" type="email" name="emailAddress">
+<br>
+<br>
+</fieldset>
+<fieldset>
+<legend>Concerns</legend>
+Start of Illness:
+<input id= "date" type="datetime" name="dateOfIllness">
+<br>
+<br>
+Symptoms:<br>
+<input id= "sym1" type="text" name="symptoms" placeholder="symptom #1" size="40">
+<br>
+<input id= "sym2" type="text" name="symptoms" placeholder="symptom #2" size="40">
+<br>
+<input id= "sym3" type="text" name="symptoms" placeholder="symptom #3" size="40">
+<br>
+<input id= "sym4" type="text" name="symptoms" placeholder="symptom #4" size="40">
+<br>
+<br>
+<input type="button" value ="submit" onclick= "myFunction()">
+<br>
+</fieldset>
+</form>
+
+<p>You entered:</p>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<p id="p9"></p>
+<p id="p10"></p>
+<p id="p11"></p>
+<p id="p12"></p>
+
+
+<script>
+function myFunction() {
+    document.getElementById("p1").innerHTML = "Last Name: " + document.getElementById('ln').value;
+	document.getElementById("p2").innerHTML = "First Name: " + document.getElementById('fn').value;
+	document.getElementById("p3").innerHTML = "Middle Initial: " + document.getElementById('mi').value;
+	document.getElementById("p4").innerHTML = "Date of Birth: " + document.getElementById('dob').value;
+	document.getElementById("p5").innerHTML = "Age: " + document.getElementById('age').value;
+	document.getElementById("p6").innerHTML = "Phone Number: " + document.getElementById('num').value;
+	document.getElementById("p7").innerHTML = "Email: " + document.getElementById('email').value;
+	document.getElementById("p8").innerHTML = "Start of Illness: " + document.getElementById('date').value;
+	document.getElementById("p9").innerHTML = "Symptom 1: " + document.getElementById('sym1').value;
+	document.getElementById("p10").innerHTML = "Symptom 2: " + document.getElementById('sym2').value;
+	document.getElementById("p11").innerHTML = "Symptom 4: " + document.getElementById('sym3').value;
+	document.getElementById("p12").innerHTML = "Symptom 5: " + document.getElementById('sym4').value;
+}
+</script
+
+
+</body>
+</html>

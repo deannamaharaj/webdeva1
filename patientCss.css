@@ -1,0 +1,21 @@
+body {
+background: radial-gradient(circle, cyan, blue, indigo, black);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+margin: auto;
+color: white;
+}
+form {
+	color: black;
+	background-color: white;
+	width:40%;
+	margin: auto;
+	text-align: center;
+}
+	
+h1 {
+text-align: center;
+text-shadow: 2px 2px 5px black;
+}
